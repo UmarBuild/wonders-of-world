@@ -1,0 +1,186 @@
+* {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+
+    body,
+    p,
+    a,
+    button,
+    span {
+        font-family: "Inter", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display", serif;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    html,body {
+        background-color: #f7f7f7;
+        color: #111827;
+        /* min-height: 100vh; */
+        height: auto !important;
+        overflow-x: hidden !important;
+    }
+.manage-height{
+    height: 50px;
+}
+    .sitemap-container {
+        max-width: 900px;
+        margin: 100px auto;
+        padding: 40px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.8s ease-out;
+    }
+    .site-link {
+        padding: 20px 24px;
+        margin: 12px 0;
+        cursor: pointer;
+        background: #ffffff;
+        border-radius: 14px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #e5e7eb;
+        border-left: 5px solid transparent;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .site-link span {
+        font-weight: 600;
+        color: #111827;
+        transition: 0.3s;
+    }
+
+    .section-show a {
+        background: #ffffff;
+        border-radius: 8px;
+        height: 45px;
+        transition: all 0.1s ease-in;
+        color: #1f2937;
+        margin: 6px auto;
+        width: 85%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border: none;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        padding-left: 30px;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    .section-show a:hover {
+        transform: translateX(4px);
+        background: #fffdf5;
+        color: #e9c867;
+        border: 1px solid #e9c867;
+        box-shadow: 0 4px 10px rgba(233, 200, 103, 0.3);
+        transition: all .1s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .site-link:hover {
+        transform: translateY(-4px);
+        background: rgba(241, 204, 90, 0.15) !important;
+        border-left: 5px solid #e9c867;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .site-link span {
+        font-weight: 500;
+    } 
+    /* .site-link:hover span {
+        color: #e9c867; 
+    }  */
+
+    .site-link.open {
+        background: rgba(233, 200, 103, 0.1);
+        border-left: 5px solid #e9c867;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #e9c867, #d4ae5c);
+        color: #111827;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px rgba(233, 200, 103, 0.4);
+    }
+    .dark-mode .sitemap-container {
+        background: #212121;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .dark-mode h1 {
+        color: #f9fafb;
+    }
+
+    .dark-mode p {
+        color: #b3b3b3;
+    }
+
+    .dark-mode .site-link {
+        background: #2c2c2c;
+        border: 1px solid #3d3d3d;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .dark-mode .site-link span {
+        color: #f9fafb;
+    }
+
+    .dark-mode .site-link:hover {
+        background: rgba(233, 200, 103, 0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .dark-mode .site-link.open {
+        background: rgba(233, 200, 103, 0.15);
+    }
+
+    .dark-mode .section-show a {
+        background: #383838;
+        color: #e0e0e0;
+        border: 1px solid #4d4d4d;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .dark-mode .section-show a:hover {
+        background: #2c2c2c;
+        color: #e9c867;
+    }

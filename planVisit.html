@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Slider</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- // bootstrap icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- // animation  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- // Css  -->
+    <link rel="stylesheet" href="./assets/plan-visit.css">
+
+</head>
+
+<body>
+    <input type="text" class="position-absolute top-0 left-0" autofocus style="opacity: 0; z-index: -1;">
+    <div class="arrow-button"></div>
+    <div class="height-manage" style="height:0px;">
+        <div id="header"></div>
+    </div>
+    <!-- // Hero Secion  -->
+    <header class="hero-section overflow-hidden" style="height: 100vh;">
+
+        <div class="row justify-content-center align-items-center p-md-5 px-3 h-100">
+
+            <!-- CONTENT BOX -->
+            <div class="col-12 col-md-5 my-5 content-box d-flex justify-content-center 
+                    flex-column p-md-4 p-3" data-aos="fade-right">
+
+                <span class="tagline px-3 fw-bold">Elevate Your Travel Journey</span>
+
+                <h1 class="hero-heading">
+                    Experience The Magic Of Flight
+                </h1>
+
+                <div class="content-box-btns mt-3 d-flex gap-3">
+                    <button class="main-btn">
+                        <a href="#secondSection" class="text-white text-center">Plan A Trip Now</a>
+                    </button>
+                </div>
+            </div>
+            <!-- IMAGE BOX -->
+            <div class="col-12 col-md-7 d-flex justify-content-start align-items-center" data-aos="zoom-in">
+
+                <img src="./images/header.png" class="hero-plane py-3">
+
+            </div>
+
+        </div>
+
+    </header>
+    <!-- // Second Section  -->
+    <div id="secondSection" class="container-fluid my-5">
+        <div class="container-lg p-5 adventure-section-container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center p-md-5 gap-5"
+                style="min-height: 60vh;">
+
+                <div class="d-flex justify-center items-center p-6" data-aos="fade-right" data-aos-duration="900">
+                    <div class="circle d-flex">
+                        <img class="orbit-img" src="./images/circle2.jpg" alt="Icon Orbiting">
+                    </div>
+                </div>
+
+                <!-- // Text Box  -->
+                <div class="second-section-text-box p-1" data-aos="fade-left" data-aos-duration="900">
+                    <h1 class="display-5">Plan Your Next Adventure</h1>
+                    <p class="fs-5 text-lg">
+                        Explore the world’s greatest wonders with seamless travel options. Whether you're flying across
+                        continents or exploring nearby cities, your adventure starts with the perfect journey.
+                    </p>
+
+                    <button data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#ad">
+                            <i class="fas fa-paper-plane mr-2"></i> Start Planning
+                        </a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- // Third Section  -->
+    <section id="ad" class="ad-section py-5 my-5" data-aos="fade-up" data-aos-duration="900">
+        <div class="container">
+            <h2 class="text-center mb-4 py-2 display-5 fw-bolder text-primary" data-aos="fade-down"
+                data-aos-duration="900">
+                🌍 Plan Your Next Adventure
+            </h2>
+
+            <div class="row g-3 justify-content-center">
+
+                <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="card shadow-lg border-0 h-100 regular-card flight-card bg-light">
+                        <div class="card-body pb-1 pt-3">
+                            <h3 class="card-title fw-bold text-flight mb-3">✈️ Flights: Dream Destinations</h3>
+                            <p class="card-text text-justify">Explore the world with amazing deals on flights. From
+                                domestic getaways
+                                to international expeditions, your journey starts here.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-geo-alt-fill me-2"></i> <b>Best Deals</b> on 100+ airlines</li>
+                                <li><i class="bi bi-clock-fill me-2"></i> Flexible booking and cancellations</li>
+                            </ul>
+                            <a href="#flightDetailSection" class="btn btn-lg w-100 text-light fw-bold card-button"
+                                style="background: #65CAF1;">Book Now!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="card shadow-lg border-0 h-100 tilted-card bus-card bg-light">
+                        <div class="card-body pb-1 pt-3">
+                            <h3 class="card-title fw-bold text-bus mb-3">🚌 Buses: Local Exploration</h3>
+                            <p class="card-text text-justify">Travel comfortably and affordably across cities and
+                                regions. Our extensive network is perfect for exploring nearby cities, embarking on
+                                spontaneous short trips.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-bus-fill me-2"></i> <b>Luxury AC</b> coaches available</li>
+                                <li><i class="bi bi-wifi me-2"></i> Free Wi-Fi and charging points</li>
+                            </ul>
+                            <a href="#busDetailSection" class="btn btn-lg w-100 fw-bold card-button"
+                                style="background: #ffd025; color: white;">Find
+                                Routes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 mt-3" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="card shadow-lg border-0 h-100 regular-card offer-card bg-light">
+                        <div class="card-body pb-0 pt-3">
+                            <h3 class="card-title fw-bold text-sale mb-3">🔥 Special Discounts</h3>
+                            <p class="card-text text-justify">Don't miss out on our limited-time special promotions.
+                                Unlock amazing value and embark on memorable journeys with unbeatable prices on
+                                high-demand routes.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-cash-stack me-2"></i> <b>Up to 30% OFF</b> on selected routes</li>
+                                <li><i class="bi bi-award-fill me-2"></i> Loyalty member bonuses</li>
+                            </ul>
+                            <a href="#sale-section" class="btn text-light btn-lg w-100 fw-bold card-button"
+                                style="background:#e6b402fb;">View
+                                Offers</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 mt-3" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="card shadow-lg border-0 h-100 tilted-card getaway-card bg-light">
+                        <div class="card-body pb-1 pt-3">
+                            <h3 class="card-title fw-bold text-adv mb-3">✨ Smart And Effortless Travel Planning</h3>
+                            <p class="card-text text-justify">Plan your entire adventure with ease. From choosing the
+                                perfect
+                                destination to tailoring your journey, we make every step smooth, intelligent, and
+                                stress-free.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-lightning-fill me-2"></i> <b> AI-smart </b> travel suggestions</li>
+                                <li><i class="bi bi-bag-fill me-2"></i> Fully guided step-by-step planning</li>
+                            </ul>
+                            <a href="#sixSection" class="btn btn-lg w-100 text-white fw-bold card-button"
+                                style="background:#4392b1;">
+                                Explore Planning
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- // Fourth Section  -->
+    <section id="flightDetailSection" class="flight-detail-section" data-aos="fade-up" data-aos-duration="1100">
+        <div class="container h-100" style="height: 100%;">
+            <div class="row h-100 justify-content-center align-items-center" style="height: 100%;">
+
+                <div class="col-lg-7 col-md-12 text-white detail-content h-100" data-aos="fade-right"
+                    data-aos-duration="1200">
+
+                    <h1 class="display-5 fw-bold mb-3">
+                        <span class="text-info">✈️ Best Deals:</span> Fly Better, Pay Less
+                    </h1>
+
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-duration="1300">
+                        Explore the globe with confidence! We handpick <strong>Top 3 Deals</strong> daily
+                        from <b>100+ trusted airlines</b> to ensure you get the absolute best prices
+                        without the hassle.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 mb-4 detail-features" data-aos="zoom-in"
+                        data-aos-duration="1400">
+
+                        <div class="feature-item">
+                            <i class="bi bi-calendar-check-fill text-info me-2"></i>
+                            <span class="fw-bold">Flexible Booking:</span> Change or adjust your plans easily.
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="bi bi-shield-lock-fill text-info me-2"></i>
+                            <span class="fw-bold">Easy Cancellations:</span> Full refunds and credits, guaranteed.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 d-md-flex flex-column justify-content-center align-items-center image-placeholder"
+                    data-aos="fade-left" data-aos-duration="1200">
+
+                    <div class="image-box">
+                        <img src="./images/plan-visit-11.png" alt="" class="h-100 img-fluid"
+                            style="width: 450px; border-radius: 15px;">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- // Fifth Section - Bus Detail Section -->
+    <section id="busDetailSection" class="bus-detail-section my-5" data-aos="fade-up" data-aos-duration="1100">
+
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+
+                <!-- Left Image Side -->
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center bus-image-box"
+                    data-aos="fade-right" data-aos-duration="1200">
+
+                    <div class="bus-img-wrapper">
+                        <img src="./images/bus2.png" alt="Bus Image" class="img-fluid rounded-4">
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-7 col-md-12 text-white bus-content" data-aos="fade-left" data-aos-duration="1200">
+
+                    <h1 class="display-6 fw-bold mb-3" data-aos="fade-up" data-aos-duration="1300">
+                        <span class="text-warning">🚌 Buses:</span> Local Exploration Made Easy
+                    </h1>
+
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-duration="1400">
+                        Travel comfortably and affordably across cities and regions.
+                        Perfect for short trips, scenic routes, and stress-free journeys.
+                        Enjoy smooth travel with modern amenities and reliable services.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4 bus-features" data-aos="zoom-in" data-aos-duration="1500">
+
+                        <div class="bus-feature-item">
+                            <i class="bi bi-wifi text-warning me-2"></i>
+                            <span class="fw-bold">Free Wi-Fi:</span> Stay connected on the go.
+                        </div>
+
+                        <div class="bus-feature-item">
+                            <i class="bi bi-battery-charging text-warning me-2"></i>
+                            <span class="fw-bold">Charging Ports:</span> Keep devices powered.
+                        </div>
+
+                        <div class="bus-feature-item">
+                            <i class="bi bi-wind text-warning me-2"></i>
+                            <span class="fw-bold">Luxury AC Coaches:</span> Travel in comfort.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- six section  -->
+    <section id="sixSection" class="six-section container-lg container-fluid overflow-hidden my-5 mx-md-auto p-0 w-100"
+        data-aos="fade-up" data-aos-duration="1200">
+
+        <h1 class="text-center fs-1" data-aos="fade-down" data-aos-duration="1200">
+            Journey To The Sky Made Simple!
+        </h1>
+
+        <span class="d-block fs-5 lead muted text-center" data-aos="fade-up" data-aos-duration="1300">
+            Effortless Planning For Your Next Adventure
+        </span>
+
+        <div class="row Journey justify-content-center align-items-center w-100 my-3 h-100 pt-3 pb-5 mx-0"
+            style="background-color: white;" data-aos="fade-up" data-aos-duration="1300">
+
+            <!-- Box 1 -->
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center overflow-hidden"
+                style="padding-top: 100px; margin-top: 50px;" data-aos="zoom-in-up" data-aos-duration="1400">
+
+                <div class="six-section-box p-3"
+                    style="background-color: rgba(128, 128, 128, 0.404); border-top-left-radius: 20px; border-top-right-radius: 20px; height: 200px; width: 340px;">
+
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                            <i class="fas fa-route fw-bold fs-4"></i>
+                        </div>
+                        <div>
+                            <h4>Seamless Booking Process</h4>
+                        </div>
+                    </div>
+
+                    <div class="six-hover-section p-1 p-md-3 w-100"
+                        style="min-height: 300px; background-color: rgb(85, 85, 224);" data-aos="fade-up"
+                        data-aos-duration="1500">
+
+                        <div class="d-flex flex-column justify-content-around">
+                            <div>
+                                <i class="fas fa-route fw-bold fs-4"></i>
+                            </div>
+                            <div class="pt-1 pt-md-3">
+                                <h2 style="font-size: 1.7rem;">Easy Reservation, One Click Away</h2>
+                            </div>
+                            <div>
+                                <p style="font-size: 1rem;">Book your trips effortlessly with our smooth and
+                                    user-friendly platform. From flights to accommodations, everything is just a few
+                                    clicks away.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center overflow-hidden"
+                style="padding-top: 100px; margin-top: 50px;" data-aos="zoom-in-up" data-aos-duration="1500">
+
+                <div class="six-section-box p-3"
+                    style="background-color: rgba(128, 128, 128, 0.404); border-top-left-radius: 20px; border-top-right-radius: 20px; height: 200px; width: 340px;">
+
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div><i class="fas fa-sliders-h fs-4 fw-bold"></i></div>
+                        <div>
+                            <h4>Tailored Itineraries</h4>
+                        </div>
+                    </div>
+
+                    <div class="six-hover-section p-1 p-md-3 w-100"
+                        style="min-height: 300px; background-color: rgb(85, 85, 224);" data-aos="fade-up"
+                        data-aos-duration="1600">
+
+                        <div class="d-flex flex-column justify-content-around">
+                            <div><i class="fas fa-sliders-h fs-4 fw-bold"></i></div>
+                            <div class="pt-1 pt-md-3">
+                                <h2 style="font-size: 1.7rem;">Customized Plans Just for You</h2>
+                            </div>
+                            <div>
+                                <p style="font-size: 1rem;">Create the perfect journey designed just for you. Whether it’s a short city trip or a multi-country adventure, our itineraries are customized to match your interests.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center overflow-hidden"
+                style="padding-top: 100px; margin-top: 50px;" data-aos="zoom-in-up" data-aos-duration="1600">
+
+                <div class="six-section-box p-3"
+                    style="background-color: rgba(128, 128, 128, 0.404); border-top-left-radius: 20px; border-top-right-radius: 20px; height: 200px; width: 340px;">
+
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <div><i class="fas fa-lightbulb fs-4 fw-bold"></i></div>
+                        <div>
+                            <h4>Expert Local Insights</h4>
+                        </div>
+                    </div>
+
+                    <div class="six-hover-section p-1 p-md-3 w-100"
+                        style="min-height: 300px; background-color: rgb(85, 85, 224);" data-aos="fade-up"
+                        data-aos-duration="1700">
+
+                        <div class="d-flex flex-column justify-content-around">
+                            <div><i class="fas fa-lightbulb fs-4 fw-bold"></i></div>
+                            <div class="p-1 pt-md-3">
+                                <h2 style="font-size: 1.7rem;">Insider Tips And Recommendations</h2>
+                            </div>
+                            <div>
+                                <p style="font-size: 1rem;">Discover hidden gems and must-visit spots with advice from local travel experts. Get insider tips on attractions, food, culture, and experiences</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- // Seven Section  -->
+    <section id="sale-section" class="py-5 my-5 sale-container" data-aos="fade-up" data-aos-duration="1200">
+
+        <div class="container d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="1300">
+
+            <div class="sale-box mx-auto p-4" data-aos="fade-up" data-aos-duration="1500">
+
+                <h2 class="sale-heading mb-3" data-aos="fade-down" data-aos-duration="1200">
+                    🔥 Exclusive Travel Sale
+                </h2>
+
+                <p class="sale-text mb-4" data-aos="fade-up" data-aos-duration="1300">
+                    Unlock unbeatable prices on flights, hotels, and travel packages.
+                    Enjoy premium service without breaking the bank — your next adventure
+                    is just a click away.
+                </p>
+
+                <ul class="sale-list mb-4" data-aos="fade-right" data-aos-duration="1500">
+
+                    <li>⭐ Up to <strong>50% OFF</strong> on selected flights</li>
+                    <li>⭐ Discounted hotel stays worldwide</li>
+                    <li>⭐ Early-bird and last-minute deals</li>
+                    <li>⭐ WOW Loyalty special vouchers</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Eight Section -->
+    <section id="cards-area" class="container pb-5">
+        <div id="travel-options" class="py-5 text-center">
+            <h2 class="fw-bold mb-4" style="color:#e0c83b;">Choose Your Travel Mode</h2>
+
+            <div class="btn-group mb-3">
+                <button class="btn btn-warning filter-btn" data-target="travel-card">All</button>
+                <button class="btn btn-warning filter-btn" data-target="bus">Bus</button>
+                <button class="btn btn-warning filter-btn" data-target="flight">Flight</button>
+                <button class="btn btn-warning filter-btn" data-target="package">Packages</button>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- FLIGHT CARD -->
+            <div class="col-lg-4 col-md-6 travel-card flight animate flight-1">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-primary position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        ✈️ Flight Service
+                    </span>
+
+                    <img src="./images/flight-1.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Economy Flight</h4>
+                        <p class="text-muted small">
+                            Fast, safe & premium air travel with comfortable seating.
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.0</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 18,500</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="flight-1">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 travel-card flight animate flight-2">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-primary position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        ✈️ Flight Service
+                    </span>
+
+                    <img src="./images/flight-2.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">SereneAir</h4>
+                        <p class="text-muted small">
+                            Safe and smooth flights with modern amenities.
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.0</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 18,500</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="flight-2">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 travel-card flight animate flight-3">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-primary position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        ✈️ Flight Service
+                    </span>
+
+                    <img src="./images/flight-3.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">AirSial</h4>
+                        <p class="text-muted small">
+                            Comfortable flights with affordable fares and excellent service.
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.0</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 18,500</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="flight-3">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- BUS CARD -->
+            <div class="col-lg-4 col-md-6 travel-card bus animate bus-1">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-dark position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🚍 Bus Service
+                    </span>
+
+                    <img src="./images/bus-1.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Luxury Bus</h4>
+                        <p class="text-muted small">
+                            Smooth & ultra–comfortable travel with AC, WiFi & reclining seats.
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.5</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 2,800</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="bus-1">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 travel-card bus animate bus-2">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-dark position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🚍 Bus Service
+                    </span>
+
+                    <img src="./images/bus-2.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Comfort Cruiser</h4>
+                        <p class="text-muted small">
+                            Smooth ride with extra legroom and onboard WiFi.
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.5</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 2,800</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="bus-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 travel-card bus animate bus-3">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-dark position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🚍 Bus Service
+                    </span>
+
+                    <img src="./images/bus-3.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Flix Bus</h4>
+                        <p class="text-muted small">
+                            Affordable & comfortable travel across cities with WiFi and AC.
+                        </p>
+
+                        <!-- RATING -->
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">4.5</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 2,800</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold " data-target="bus-3">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PACKAGE CARD -->
+            <div class="col-lg-4 col-md-6 travel-card package animate package-1">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-danger position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🎁 Holiday Package
+                    </span>
+
+                    <img src="./images/package-1.jpeg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Flight + Hotel Package</h4>
+                        <p class="text-muted small">
+                            Enjoy a complete getaway with our Flight + Hotel Package! — limited sale!
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">3.8</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 6,999</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="package-1">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 travel-card package animate package-2">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-danger position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🎁 Holiday Package
+                    </span>
+
+                    <img src="./images/package-2.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Bus + Hotel Package</h4>
+                        <p class="text-muted small">
+                            Relax and travel in comfort with our Bus + Hotel Package! limited-sale!
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">3.8</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 6,999</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="package-2">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 travel-card package animate package-3">
+                <div class="card shadow-lg border-0 h-100" style="border-radius:14px;">
+
+                    <!-- LABEL -->
+                    <span class="badge bg-danger position-absolute m-2 px-3 py-2" style="border-radius:8px;">
+                        🎁 Holiday Package
+                    </span>
+
+                    <img src="./images/package-3.jpg" class="card-img-top"
+                        style="height:220px; object-fit:cover; border-radius:14px 14px 0 0;">
+
+                    <div class="card-body">
+                        <h4 class="fw-bold text-dark">Flight + Hotel Package</h4>
+                        <p class="text-muted small">
+                            Complete holiday bundle with transport, hotel & guide — limited sale!
+                        </p>
+
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                            <span class="ms-1 text-dark fw-semibold">3.8</span>
+                        </div>
+
+                        <h5 class="fw-bold text-success">Rs. 6,999</h5>
+                        <a href="#" class="book-btn btn btn-warning w-100 mt-3 fw-bold" data-target="package-3">Book
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        let buttons = document.querySelectorAll(".filter-btn");
+        let cards = document.querySelectorAll(".travel-card");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                let target = btn.dataset.target;
+                cards.forEach(card => {
+                    card.style.display = card.classList.contains(target) ? "block" : "none";
+                    card.classList.remove("animate");
+                    void card.offsetWidth;
+                    card.classList.add("animate");
+                });
+            });
+        });
+
+
+    </script>
+    <!-- SweetAlert2 -->
+    <script>
+
+        document.querySelectorAll(".book-btn").forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault(); // link ko open hone se rokne ke liye
+
+                Swal.fire({
+                    title: "Booking Started!",
+                    text: "Please wait… Redirecting to booking page.",
+                    icon: "success",
+                    confirmButtonColor: "#f1c40f",
+                    confirmButtonText: "Okay"
+                }).then(() => {
+                    window.location.href = this.getAttribute("href"); // actual page par redirect
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- // footer  -->
+    <div id="footer"></div>
+    <!-- header-footer.js  -->
+    <script src="./assets/header-footer.js"></script>
+    <!-- // animation js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1200,
+            easing: 'ease-in-out'
+        });
+        window.scrollTo({ behavior: 'smooth' })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("goToSecond").addEventListener("click", function () {
+            document.getElementById("secondSection").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>

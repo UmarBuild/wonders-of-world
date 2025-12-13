@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif !important;
+}
+
+body, p, a, button {
+  font-family: "Poppins", sans-serif !important;
+}
+body{
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* // Second / Last Section  */
+#first-section {
+    background: transparent !important; 
+    color: #333333 !important; 
+}
+
+#first-section h2 {
+    color: #2c3e50 !important;
+}
+
+#first-section .para {
+    color: #555555 !important;
+    padding: 0 150px;
+}
+
+#first-section .container-fluid.container-sm {
+    background: transparent !important;
+}
+
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo .box .icon::before,
+.contactInfo .box .icon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid #e9c867;
+    animation: rotateBorder 6s linear infinite;
+}
+
+.contactInfo .box .icon::after {
+    animation-direction:reverse;
+}
+
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.contactInfo .box .icon i {
+     color: #e9c867;
+     font-weight: bolder;
+    font-size: 1.4rem;
+    z-index: 10;
+}
+
+.contactInfo .box .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #555555;
+    font-weight: 300;
+}
+
+.contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.contactInfo .txt {
+    color: #2c3e50;
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #e9c867;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.contactInfo .sci {
+    position: relative;
+    display: flex;
+    text-align: start;
+    gap: 30px;
+    margin: 20px -30px;
+}
+
+.contactInfo .sci li a {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+.contactInfo .sci li a:hover {
+    color: #e9c867;
+    filter: drop-shadow(0 0 5px rgba(233, 200, 103, 0.7));
+}
+
+.contactForm {
+    width: 50%;
+    position: relative;
+    padding: 60px;
+    background: #f8f9fa !important;
+    z-index: 1;
+    border: 2px solid transparent;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contactForm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #e9c867;
+    animation: moveTop 3s linear infinite;
+}
+
+.contactForm::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #e9c867;
+    animation: moveBottom 3s linear infinite;
+}
+
+.contactForm .leftBorder {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #e9c867;
+    animation: moveLeft 3s linear infinite;
+}
+
+.contactForm .rightBorder {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: #e9c867;
+    animation: moveRight 3s linear infinite;
+}
+
+@keyframes moveTop {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes moveBottom {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes moveLeft {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes moveRight {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+.contactForm form {
+    position: relative;
+    z-index: 10;
+}
+
+.contactForm form h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactForm form .inputBox input,
+.contactForm form .inputBox textarea
+{
+    width: 100% !important;
+    padding: 15px 0;
+    font-size: 1.1em;
+    margin: 5px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #e9c867; 
+    color: #2c3e50;
+    outline: none;
+    resize: none;
+}
+.contactForm form .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    font-size: 1.1em;
+    color: #555555;
+    transition: all 0.5s;
+}
+.contactForm form .inputBox input:focus ~ span,
+.contactForm form .inputBox textarea:focus ~ span,
+.contactForm form .inputBox input:valid ~ span,
+.contactForm form .inputBox textarea:valid ~ span
+{
+    color: #e9c867;
+    font-size: 0.9em;
+    transform: translateY(-14px);
+}
+
+.contactForm form .inputBox input[type="submit"]{
+    width: 100%;
+    background: #e9c867;
+    color: #2c3e50;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.contactForm form .inputBox input[type="submit"]:hover{
+    background: #d4ae5c;
+}
+
+.para{
+    padding: 0 150px;
+}
+
+@media(max-width:991px){
+    .para{
+        padding: 0 0 !important;
+    }
+    .container-sm.d-lg-flex {
+        overflow: hidden;
+        width: 100%;
+        flex-wrap: wrap; 
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .contactInfo,.contactForm{
+        width:100%;
+    }
+    .contactForm{
+        margin: 50px 0;
+    }
+}
+/* // Second Section Dark Mode  */
+.dark-mode #first-section {
+    background:transparent !important;
+    color: #ffffff !important;
+}
+
+.dark-mode #first-section h2 {
+    color: #ffffff !important;
+}
+
+.dark-mode #first-section .para {
+    color: #cccccc !important;
+    padding: 0 150px;
+}
+
+.dark-mode #first-section .container-fluid.container-sm {
+    background: transparent !important;
+}
+
+.dark-mode .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-mode .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.dark-mode .contactInfo .box .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode .contactInfo .box .icon::before,
+.dark-mode .contactInfo .box .icon::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid #e9c867;
+    animation: rotateBorder 6s linear infinite;
+}
+
+.dark-mode .contactInfo .box .icon::after {
+    animation-direction:reverse;
+}
+
+.dark-mode .contactInfo .box .icon i {
+    color: #e9c867;
+    font-size: 1.4rem;
+    z-index: 10;
+}
+
+.dark-mode .contactInfo .box .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.dark-mode .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #e9c867;
+}
+
+.dark-mode .contactInfo .txt {
+    color: #ffffff;
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #e9c867;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.dark-mode .contactInfo .sci {
+    position: relative;
+    display: flex;
+    text-align: start;
+    gap: 30px;
+    margin: 20px -30px;
+}
+
+.dark-mode .contactInfo .sci li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+.dark-mode .contactInfo .sci li a:hover {
+    color: #e9c867;
+    filter: drop-shadow(0 0 5px rgba(233, 200, 103, 0.7));
+}
+
+.dark-mode .contactForm {
+    width: 50%;
+    position: relative;
+    padding: 60px;
+    background: #1a1a1a !important;
+    z-index: 1;
+    border: 2px solid transparent;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .contactForm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #e9c867;
+    animation: moveTop 3s linear infinite;
+}
+
+.dark-mode .contactForm::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #e9c867;
+    animation: moveBottom 3s linear infinite;
+}
+
+.dark-mode .contactForm .leftBorder {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: #e9c867;
+    animation: moveLeft 3s linear infinite;
+}
+
+.dark-mode .contactForm .rightBorder {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: #e9c867;
+    animation: moveRight 3s linear infinite;
+}
+
+.dark-mode .contactForm form {
+    position: relative;
+    z-index: 10;
+}
+
+.dark-mode .contactForm form h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.dark-mode .contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dark-mode .contactForm form .inputBox input,
+.dark-mode .contactForm form .inputBox textarea
+{
+    width: 100% !important;
+    padding: 15px 0;
+    font-size: 1.1em;
+    margin: 5px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #e9c867;
+    color: #ffffff;
+    outline: none;
+    resize: none;
+}
+.dark-mode .contactForm form .inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    font-size: 1.1em;
+    color: #999999;
+    transition: all 0.5s;
+}
+.dark-mode .contactForm form .inputBox input:focus ~ span,
+.dark-mode .contactForm form .inputBox textarea:focus ~ span,
+.dark-mode .contactForm form .inputBox input:valid ~ span,
+.dark-mode .contactForm form .inputBox textarea:valid ~ span
+{
+    color: #e9c867;
+    font-size: 0.9em;
+    transform: translateY(-14px);
+}
+
+.dark-mode .contactForm form .inputBox input[type="submit"]{
+    width: 100%;
+    background: #e9c867;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.dark-mode .contactForm form .inputBox input[type="submit"]:hover{
+    background: #d4ae5c;
+}
+
+.dark-mode .para{
+    padding: 0 150px;
+}
+
+/* @keyframes must be included in your final CSS file */
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes moveTop {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes moveBottom {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes moveLeft {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes moveRight {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+@media(max-width:991px){
+    .dark-mode .container-sm.d-lg-flex {
+        overflow: hidden;
+        width: 100%;
+        flex-wrap: wrap; 
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .dark-mode .para{
+        padding: 0 30px;
+    }
+    .dark-mode .contactInfo,.dark-mode .contactForm{
+        width:100%;
+    }
+    .dark-mode .contactForm{
+        margin: 50px 0;
+    }
+}

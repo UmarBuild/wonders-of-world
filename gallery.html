@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Slider</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!--    BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- // animation  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
+
+    <!-- // Css  -->
+    <link rel="stylesheet" href="./assets/gallery.css">
+
+</head>
+
+<body>
+    <div class="arrow-button"></div>
+    <input type="text" class="position-absolute top-0 left-0" autofocus style="opacity: 0; z-index: -1;">
+    <div id="header"></div>
+    <!-- // Hero Secion  -->
+    <div id="wonders-showcase" class="carousel">
+
+        <div class="list">
+
+            <div class="item" style="background-image: url(./images/gallery33.png);">
+                <div class="content">
+                    <div class="title">Experience Wonders</div>
+                    <div class="name">from Every Angle</div>
+                    <div class="des">Take in the majestic scale of the world’s greatest wonders from above. From
+                        sweeping aerial views to breathtaking landscapes, discover perspectives that reveal the full
+                        glory of these timeless marvels.</div>
+                    <div class="btn">
+                        <button><a href="#gallery-section" class="text-dark">See Photos</a></button>
+                        <button><a href="./downloads.html" style=" color: #F0E092;">History</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(./images/gallery2.png);">
+
+                <div class="content">
+                    <div class="title">Marvel at Stunning</div>
+                    <div class="name">Craftsmanship</div>
+                    <div class="des">Delve into the intricate details and masterful artistry of ancient wonders. From
+                        stone carvings to ornate arches, every element tells a story of skill, vision, and cultural
+                        legacy.</div>
+                    <div class="btn">
+                        <button><a class="text-dark" href="#gallery-section">See Photos</a></button>
+                        <button><a style=" color: #F0E092;" href="./downloads.html">History</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/gallery3.jpg);">
+
+                <div class="content">
+                    <div class="title">Discover Wonders</div>
+                    <div class="name">in Their Natural Splendor</div>
+                    <div class="des">Explore how each wonder harmonizes with its surrounding environment. Lush gardens,
+                        towering mountains, and serene rivers enhance the awe-inspiring presence of these iconic
+                        landmarks.</div>
+                    <div class="btn">
+                        <button><a href="#gallery-section" class="text-dark">See Photos</a></button>
+                        <button><a href="./downloads.html" style=" color: #F0E092;">History</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/gallery4.png);">
+
+                <div class="content">
+                    <div class="title">Step into the</div>
+                    <div class="name">Story of the Wonders</div>
+                    <div class="des">See the wonders through the eyes of travelers who have walked these historic sites.
+                        Feel the scale, connect with the past, and become part of the story that has inspired
+                        generations.</div>
+                    <div class="btn">
+                        <button><a href="#gallery-section" class="text-dark">See Photos</a></button>
+                        <button><a href="./downloads.html" style=" color: #F0E092;">History</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item" style="background-image: url(./images/gallery5.png);">
+
+                <div class="content">
+                    <div class="title">Witness Wonders</div>
+                    <div class="name">in Magical Light</div>
+                    <div class="des">Experience the enchanting beauty of wonders bathed in the warm glow of sunrise or
+                        sunset. Cinematic light brings every detail to life, creating moments of awe and inspiration.
+                    </div>
+                    <div class="btn">
+                        <button><a href="#gallery-section" class="text-dark">See Photos</a></button>
+                        <button><a href="./downloads.html" style=" color: #F0E092;">History</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="arrows">
+            <button class="prev"><i class="fas fa-angle-left" style="font-size: 13px;"></i> </button>
+            <button class="next">></button>
+        </div>
+
+
+    </div>
+    <!-- // Second Section  -->
+    <!-- // Image Gallery  -->
+    <div id="gallery-section" class="container mb-5 text-center">
+        <!-- // Heading  -->
+        <div class="py-4" data-aos="fade-down" data-aos-duration="1400">
+            <h3 class="fw-bolder text-center" style="font-size: 3rem; letter-spacing: 2px;">
+                <span class="fw-bolder" style="color: #d3b719;">Photo</span>
+                <span class="fw-light">Gallery</span>
+            </h3>
+        </div>
+        <div class="wonder-buttons text-center mb-4 ">
+            <button class="wonder-btn mx-2 my-2" data-target="all">All</button>
+            <button class="wonder-btn mx-2 my-2" data-target="wall">Great Wall</button>
+            <button class="wonder-btn mx-2 my-2" data-target="petra">Petra</button>
+            <button class="wonder-btn mx-2 my-2" data-target="taj">Taj Mahal</button>
+            <button class="wonder-btn mx-2 my-2" data-target="chicken">Chicken Itza</button>
+            <button class="wonder-btn mx-2 my-2" data-target="machu">Machu Picchu</button>
+            <button class="wonder-btn mx-2 my-2" data-target="christ">Christ the Redeemer</button>
+            <button class="wonder-btn mx-2 my-2" data-target="colesseum">Colesseum</button>
+        </div>
+
+
+        <div class="layout" id="gallery"  uk-lightbox="animation: scale">
+
+            <!-- First 15 images -->
+            <a href="./images/1.jpg" target="_blank">
+                <img src="./images/1.jpg" class="mItem" data-category="taj">
+            </a>
+
+            <a href="./images/2.jpg" target="_blank">
+                <img src="./images/2.jpg" class="mItem" data-category="chicken">
+            </a>
+
+            <a href="./images/3.jpg" target="_blank"><img src="./images/3.jpg" class="mItem" data-category="colleseum"> </a>
+
+            <a href="./images/4.jpg" target="_blank"> <img src="./images/4.jpg" class="mItem" data-category="wall"></a>
+            <a href="./images/5.jpg" target="_blank"> <img src="./images/5.jpg" class="mItem" data-category="colesseum"></a>
+            <a href="./images/6.jpg" target="_blank"> <img src="./images/6.jpg" class="mItem" data-category="colesseum"></a>
+            <a href="./images/7.jpg" target="_blank"> <img src="./images/7.jpg" class="mItem" data-category="christ"></a>
+            <a href="./images/8.jpg" target="_blank"> <img src="./images/8.jpg" class="mItem" data-category="christ"></a>
+            <a href="./images/9.jpg" target="_blank"> <img src="./images/9.jpg" class="mItem" data-category="machu"></a>
+            <a href="./images/10.jpg" target="_blank"> <img src="./images/10.jpg" class="mItem" data-category="taj"></a>
+            <a href="./images/11.jpg" target="_blank"> <img src="./images/11.jpg" class="mItem" data-category="petra"></a>
+            <a href="./images/12.jpg" target="_blank"> <img src="./images/12.jpg" class="mItem" data-category="chicken"></a>
+            <a href="./images/13.jpg" target="_blank"> <img src="./images/13.jpg" class="mItem" data-category="machu"></a>
+            <a href="./images/14.jpg" target="_blank"> <img src="./images/14.jpg" class="mItem" data-category="taj"></a>
+            <a href="./images/15.jpg" target="_blank"> <img src="./images/15.jpg" class="mItem" data-category="petra"></a>
+  <a href="./images/16.jpg" target="_blank"> <img src="./images/16.jpg" class="mItem" data-category="taj">
+                </a>
+                <a href="./images/17.jpg" target="_blank"> <img src="./images/17.jpg" class="mItem" data-category="christ">
+                </a>
+                <a href="./images/18.jpg" target="_blank"> <img src="./images/18.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/19.jpg" target="_blank"> <img src="./images/19.jpg" class="mItem" data-category="wall">
+                </a>
+                <a href="./images/20.jpg" target="_blank"> <img src="./images/20.jpg" class="mItem" data-category="wall">
+                </a>
+                    <a href="./images/21.jpg" target="_blank"> <img src="./images/21.jpg" class="mItem" data-category="colesseum">
+                </a>
+                <a href="./images/22.jpg" target="_blank"> <img src="./images/22.jpg" class="mItem" data-category="colesseum">
+                </a>
+                <a href="./images/23.jpg" target="_blank"> <img src="./images/23.jpg" class="mItem" data-category="taj">
+                </a>
+                <a href="./images/24.jpg" target="_blank"> <img src="./images/24.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/25.jpg" target="_blank"> <img src="./images/25.jpg" class="mItem" data-category="christ">
+                </a>
+            <!-- Extra images -->
+            <div class="extra hidden">
+            
+                <a href="./images/26.jpg" target="_blank"> <img src="./images/26.jpg" class="mItem" data-category="taj">
+                </a>
+                <a href="./images/27.jpg" target="_blank"> <img src="./images/27.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/28.jpg" target="_blank"> <img src="./images/28.jpg" class="mItem" data-category="wall">
+                </a>
+                <a href="./images/29.jpg" target="_blank"> <img src="./images/29.jpg" class="mItem" data-category="chicken">
+                </a>
+                <a href="./images/30.jpg" target="_blank"> <img src="./images/30.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/31.jpg" target="_blank"> <img src="./images/31.jpg" class="mItem" data-category="chicken">
+                </a>
+                <a href="./images/32.jpg" target="_blank"> <img src="./images/32.jpg" class="mItem" data-category="colesseum">
+                </a>
+                <a href="./images/33.jpg" target="_blank"> <img src="./images/33.jpg" class="mItem" data-category="colesseum">
+                </a>
+                <a href="./images/34.jpg" target="_blank"> <img src="./images/34.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/35.jpg" target="_blank"> <img src="./images/35.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/36.jpg" target="_blank"> <img src="./images/36.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/37.jpg" target="_blank"> <img src="./images/37.jpg" class="mItem" data-category="wall">
+                </a>
+                <a href="./images/38.jpg" target="_blank"> <img src="./images/38.jpg" class="mItem" data-category="wall">
+                </a>
+                <a href="./images/39.jpg" target="_blank"> <img src="./images/39.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/40.jpg" target="_blank"> <img src="./images/40.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/41.jpg" target="_blank"> <img src="./images/41.jpg" class="mItem" data-category="christ">
+                </a>
+                <a href="./images/42.jpg" target="_blank"> <img src="./images/42.jpg" class="mItem" data-category="christ">
+                </a>
+                <a href="./images/43.jpg" target="_blank"> <img src="./images/43.jpg" class="mItem" data-category="christ">
+                </a>
+                <a href="./images/44.jpg" target="_blank"> <img src="./images/44.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/45.jpg" target="_blank"> <img src="./images/45.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/46.jpg" target="_blank"> <img src="./images/46.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/47.jpg" target="_blank"> <img src="./images/47.jpg" class="mItem" data-category="machu">
+                </a>
+                <a href="./images/48.jpg" target="_blank"> <img src="./images/48.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/49.jpg" target="_blank"> <img src="./images/49.jpg" class="mItem" data-category="petra">
+                </a>
+                <a href="./images/50.jpg" target="_blank"> <img src="./images/50.jpg" class="mItem" data-category="wall">
+                </a>
+                 <a href="./images/51.jpg" target="_blank"> <img src="./images/51.jpg" class="mItem" data-category="chicken">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <button class="btn more">More</button>
+            <button class="btn less">Less</button>
+        </div>
+    </div>
+
+    <!-- // footer  -->
+    <div id="footer"></div>
+    <!-- header-footer.js  -->
+    <script src="./assets/header-footer.js"></script>
+    <!-- // animation js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1200,
+            easing: 'ease-in-out'
+        });
+        window.scrollTo({ behavior: 'smooth' })
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/app.js"></script>
+    <!-- ui kit js -->
+ <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
+
+</body>
+
+</html>
