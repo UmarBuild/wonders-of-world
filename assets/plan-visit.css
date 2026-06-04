@@ -715,7 +715,7 @@ body.dark-mode {
 .sale-box {
     width: 800px;
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 20px; 
     position: relative;
     box-shadow: 0 4px 18px rgba(0, 50, 90, 0.10);
     transition: transform .3s ease, box-shadow .3s ease;
