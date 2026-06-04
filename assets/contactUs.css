@@ -200,24 +200,24 @@ a {
 @keyframes moveLeft {
     0% { transform: translateY(100%); }
     100% { transform: translateY(-100%); }
-}
-
-@keyframes moveRight {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(100%); }
-}
-
-.contactForm form {
-    position: relative;
-    z-index: 10;
-}
-
-.contactForm form h2 {
-    font-size: 2rem;
-    color: #2c3e50;
-    font-weight: 500;
-}
-
+} 
+ 
+@keyframes moveRight { 
+    0% { transform: translateY(-100%); } 
+    100% { transform: translateY(100%); } 
+} 
+ 
+.contactForm form { 
+    position: relative; 
+    z-index: 10; 
+} 
+ 
+.contactForm form h2 { 
+    font-size: 2rem; 
+    color: #2c3e50; 
+    font-weight: 500; 
+} 
+ 
 .contactForm form .inputBox {
     position: relative;
     width: 100%;

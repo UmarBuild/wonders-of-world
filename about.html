@@ -56,8 +56,7 @@
 
             <div class="col-lg-6 col-md-12 about-right">
                 <div class="about-card">
-                    <img src="./images/about-hero.jpeg" alt="Wonders"
-                        class="about-card-img">
+                    <img src="./images/about-hero.jpeg" alt="Wonders" class="about-card-img">
 
                     <div class="about-card-info">
                         <h3>Explore Iconic Places</h3>
@@ -176,23 +175,23 @@
 
                 <div class="col-md-3 col-6 mb-4 mb-md-0 stat-item" data-aos="fade-up" data-aos-duration="1000"
                     data-aos-delay="200">
-                    <h3 class="counter" data-target="10">10</h3>
+                    <h3 class="counter" id="target1">0</h3>
                     <p>Wonders Featured</p>
                 </div>
 
                 <div class="col-md-3 col-6 mb-4 mb-md-0 stat-item" data-aos="fade-up" data-aos-duration="1000"
                     data-aos-delay="400">
-                    <h3 class="counter" data-target="99">99</h3>
+                    <h3 class="counter" id="target2">0</h3>
                     <p>Coverage</p>
                 </div>
 
                 <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <h3 class="counter" data-target="5000">5000</h3>
+                    <h3 class="counter" id="target3">0</h3>
                     <p>Global Explorers</p>
                 </div>
 
                 <div class="col-md-3 col-6 stat-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                    <h3 class="counter" data-target="15">15</h3>
+                    <h3 class="counter" id="target4">0</h3>
                     <p>Years of Discovery</p>
                 </div>
 
@@ -254,7 +253,7 @@
                 <div class="card border-0 shadow-sm p-4 text-center" id="review-card">
 
                     <div id="review-user" class="mb-3">
-                        <img src="images/testimonial-3.png" alt="User" class="rounded-circle" id="review-img" >
+                        <img src="images/testimonial-3.png" alt="User" class="rounded-circle" id="review-img">
                         <h5 class="mt-2 fw-bold" id="review-name">Sarah Miller</h5>
                     </div>
 
@@ -391,8 +390,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script>
+    <!-- <script>
         window.addEventListener("scroll", () => {
             document.querySelectorAll(".counter").forEach((num) => {
                 let target = +num.dataset.target;
@@ -404,14 +402,63 @@
                     if (x >= displayTarget) {
                         if (target >= 1000) {
                             num.innerHTML = displayTarget + 'K';
-                        }
-                        clearInterval(timer);
-                    };
-                }, 50);
-            });
-        })
-    </script>
+                            }
+                            clearInterval(timer);
+                            };
+                            }, 50);
+                            });
+                            })
+                        </script> -->
+                        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script> -->
 
-</body>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.min.js" ></script>
+ 
+ 
+-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.10.0/dist/countUp.umd.min.js"></script>
+<script>
+const thirdsection = document.getElementById("third-section") ; 
+ console.log(window) ;  
+ document.addEventListener("scroll",()=>{
+if( window.scrollY > thirdsection.offsetTop -100 ){  
+ let target1 = document.getElementById("target1") ; 
+             let target2 = document.getElementById("target2");
+    let target3 = document.getElementById("target3");
+    let target4 = document.getElementById("target4");
 
-</html>
+    const countUp1 = new countUp.CountUp('target1', 100);
+if (!countUp1.error) {
+  countUp1.start();
+} else {
+  console.error(countUp1.error);
+}
+    const countUp2 = new countUp.CountUp('target2', 99);
+if (!countUp2.error) {
+  countUp2.start();
+} else {
+  console.error(countUp2.error);
+}
+    const countUp3 = new countUp.CountUp('target3', 55);
+if (!countUp3.error) {
+  countUp3.start();
+} else {
+  console.error(countUp3.error);
+}
+    const countUp4 = new countUp.CountUp('target4', 15);
+if (!countUp4.error) {
+  countUp4.start();
+} else {
+  console.error(countUp4.error);
+}
+}
+ })
+
+</script>
+
+
+ 
+ </body> 
+ 
+ </html> 
+ 
